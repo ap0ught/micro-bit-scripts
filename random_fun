@@ -1,10 +1,12 @@
 let last = 0
 let random = 0
 basic.forever(() => {
-	
+    
 })
 input.onGesture(Gesture.Shake, () => {
-    random = Math.random(9)
+    while (last == random) {
+        random = Math.random(9)
+    }
     last = random
     basic.showNumber(random)
 })
