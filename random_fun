@@ -1,0 +1,22 @@
+let last = 0
+let random = 0
+basic.forever(() => {
+	
+})
+input.onGesture(Gesture.Shake, () => {
+    random = Math.random(9)
+    last = random
+    basic.showNumber(random)
+})
+input.onButtonPressed(Button.A, () => {
+    images.createImage(`
+        # . . . #
+        . # # # .
+        . . # . .
+        . # # # .
+        # . . . #
+        `).showImage(0)
+    basic.pause(4000)
+    basic.showIcon(IconNames.Sad)
+    basic.clearScreen()
+})
