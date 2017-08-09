@@ -18,7 +18,12 @@ input.onButtonPressed(Button.A, () => {
         . # # # .
         # . . . #
         `).showImage(0)
-    basic.pause(4000)
+    basic.pause(1000)
     basic.showIcon(IconNames.Sad)
+    basic.pause(1000)
+    basic.clearScreen()
+    basic.pause(1000)
+    basic.showString("bye.")
+    basic.pause(1000)
     basic.clearScreen()
 })
