@@ -1,0 +1,244 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="procedures_defnoreturn" id="H)#[SHDGbm2q5b5elcLW" x="20" y="20">
+    <field name="NAME">clear_screen</field>
+    <statement name="STACK">
+      <block type="device_pause" id="rxq282g~-+=.CN=oJ6T-">
+        <value name="pause">
+          <shadow type="math_number" id="?dv-z/%WB]6E498{w[;j">
+            <field name="NUM">1000</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="basic_show_icon" id="}Pj+#BkfGpxrev3]r9cG">
+            <field name="i">IconNames.Sad</field>
+            <next>
+              <block type="device_pause" id="F{@sr#5%364#`zvr/hQk">
+                <value name="pause">
+                  <shadow type="math_number" id="$fFf?himC{vvB6Zg=CG#">
+                    <field name="NUM">1000</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="device_clear_display" id=";3j*?FkbHI-y1%63m)e)">
+                    <next>
+                      <block type="device_pause" id="ltP6/29INoNH)}.{ICt`">
+                        <value name="pause">
+                          <shadow type="math_number" id="MkQuLq[Fc)JZbKK-(pjB">
+                            <field name="NUM">1000</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="device_print_message" id="97P]K#-GKXXJa$_%5*bU">
+                            <value name="text">
+                              <shadow type="text" id="|_o?0-@n3{`46f$[{][g">
+                                <field name="TEXT">bye.</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="device_pause" id="MSn@Dmp*ZZ?jS`pOlzP+">
+                                <value name="pause">
+                                  <shadow type="math_number" id="1hp?9xV93p2.$C,}Rb^w">
+                                    <field name="NUM">1000</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="device_clear_display" id="L~ueA0Hc6j#Px1]z/B|o"></block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="device_button_event" id="=lOQR_gSQ0_^rw]V($%-" x="317" y="20">
+    <field name="NAME">Button.A</field>
+    <statement name="HANDLER">
+      <block type="device_show_image_offset" id="mnlV:i0zBV5.{El7y~rV">
+        <value name="sprite">
+          <block type="device_build_image" id="%51_/K6o{~f_]9Clj3*Z">
+            <field name="LED00">TRUE</field>
+            <field name="LED10">FALSE</field>
+            <field name="LED20">FALSE</field>
+            <field name="LED30">FALSE</field>
+            <field name="LED40">TRUE</field>
+            <field name="LED01">FALSE</field>
+            <field name="LED11">TRUE</field>
+            <field name="LED21">TRUE</field>
+            <field name="LED31">TRUE</field>
+            <field name="LED41">FALSE</field>
+            <field name="LED02">FALSE</field>
+            <field name="LED12">FALSE</field>
+            <field name="LED22">TRUE</field>
+            <field name="LED32">FALSE</field>
+            <field name="LED42">FALSE</field>
+            <field name="LED03">FALSE</field>
+            <field name="LED13">TRUE</field>
+            <field name="LED23">TRUE</field>
+            <field name="LED33">TRUE</field>
+            <field name="LED43">FALSE</field>
+            <field name="LED04">TRUE</field>
+            <field name="LED14">FALSE</field>
+            <field name="LED24">FALSE</field>
+            <field name="LED34">FALSE</field>
+            <field name="LED44">TRUE</field>
+          </block>
+        </value>
+        <value name="offset">
+          <shadow type="math_number" id="g;5j=N#M6f|ggS(:q8a7">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="procedures_callnoreturn" id="-x@XUmx.T`7Bcm4JD=lO">
+            <mutation name="clear_screen"></mutation>
+            <field name="NAME">clear_screen</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="device_button_event" id="9I`~)nhzh3lu-r~0J@Fl" x="820" y="20">
+    <field name="NAME">Button.AB</field>
+    <statement name="HANDLER">
+      <block type="controls_repeat_ext" id="AS?dn84vVGAo.Li0k-*,">
+        <value name="TIMES">
+          <shadow type="math_number" id="R$PE1?Gr96MmYq`#lJZw">
+            <field name="NUM">2</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="device_print_message" id="7_WkvyIMwZa+/sF*)pnO">
+            <value name="text">
+              <shadow type="text" id="[[lz)Quq?exb7GUH)$(y">
+                <field name="TEXT">Hello!</field>
+              </shadow>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="procedures_callnoreturn" id="m/%%p)1N5;g0h;X?~mxo">
+            <mutation name="clear_screen"></mutation>
+            <field name="NAME">clear_screen</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="device_button_event" id="_y$6(o~yc*?h_|VE_:;}" x="849" y="219">
+    <field name="NAME">Button.B</field>
+    <statement name="HANDLER">
+      <block type="device_show_leds" id="VFI18RAkV`{U[CKY6}uf">
+        <field name="LED00">TRUE</field>
+        <field name="LED10">FALSE</field>
+        <field name="LED20">TRUE</field>
+        <field name="LED30">FALSE</field>
+        <field name="LED40">TRUE</field>
+        <field name="LED01">FALSE</field>
+        <field name="LED11">TRUE</field>
+        <field name="LED21">FALSE</field>
+        <field name="LED31">TRUE</field>
+        <field name="LED41">FALSE</field>
+        <field name="LED02">TRUE</field>
+        <field name="LED12">FALSE</field>
+        <field name="LED22">TRUE</field>
+        <field name="LED32">FALSE</field>
+        <field name="LED42">TRUE</field>
+        <field name="LED03">FALSE</field>
+        <field name="LED13">TRUE</field>
+        <field name="LED23">FALSE</field>
+        <field name="LED33">TRUE</field>
+        <field name="LED43">FALSE</field>
+        <field name="LED04">TRUE</field>
+        <field name="LED14">FALSE</field>
+        <field name="LED24">TRUE</field>
+        <field name="LED34">FALSE</field>
+        <field name="LED44">TRUE</field>
+        <next>
+          <block type="procedures_callnoreturn" id="M?#@!/$B}NW|G0{A#S7]">
+            <mutation name="clear_screen"></mutation>
+            <field name="NAME">clear_screen</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="device_gesture_event" id="yrMt{i9lM)5Rj{$b@]HF" x="315" y="258">
+    <field name="NAME">Gesture.Shake</field>
+    <statement name="HANDLER">
+      <block type="device_while" id=")?.Fa*j@yj~W7h=ICbnU">
+        <value name="COND">
+          <shadow type="logic_boolean">
+            <field name="BOOL">TRUE</field>
+          </shadow>
+          <block type="logic_compare" id="+;`cL~KGUQ4jE*$y?r6!">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <shadow type="math_number">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="variables_get" id="cg]L%8{9;NE%Dm`4U}ql">
+                <field name="VAR">last</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="variables_get" id="rPd_Yr4(,,NQkvKYW38y">
+                <field name="VAR">random</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="variables_set" id="CHl{:Hr9Vii!|Q2*$(^i">
+            <field name="VAR">random</field>
+            <value name="VALUE">
+              <shadow type="math_number">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="device_random" id="4q:U@Tz.S,G7N48{-_F7">
+                <value name="limit">
+                  <shadow type="math_number" id="zh)@G@d1HPUg6u%{y3JE">
+                    <field name="NUM">8</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="variables_set" id="t(VuxPB`DLK/=zp6-.ev">
+            <field name="VAR">last</field>
+            <value name="VALUE">
+              <shadow type="math_number">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="variables_get" id="v}.yPEQ]e5tR76F|vSH~">
+                <field name="VAR">random</field>
+              </block>
+            </value>
+            <next>
+              <block type="device_show_number" id="GIn_]|MZtw@Jy7d2.O85">
+                <value name="number">
+                  <block type="variables_get" id="|q_`KHCRMQmhnggg?}Fk">
+                    <field name="VAR">random</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

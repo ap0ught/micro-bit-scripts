@@ -1,0 +1,264 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="text" id="sSrFff1#@E5H}W1ceJLB" disabled="true" x="866" y="0">
+    <field name="TEXT"></field>
+  </block>
+  <block type="device_button_event" id="2i[]t:wsCxGdi|jRL@GN" x="0" y="194">
+    <field name="NAME">Button.A</field>
+    <statement name="HANDLER">
+      <block type="device_show_image_offset" id="2#io;ALIU;X!0e=(^F-5">
+        <value name="sprite">
+          <block type="device_build_image" id="N#YDu_Ln7uFB=kR8Bn@;">
+            <field name="LED00">TRUE</field>
+            <field name="LED10">FALSE</field>
+            <field name="LED20">FALSE</field>
+            <field name="LED30">FALSE</field>
+            <field name="LED40">TRUE</field>
+            <field name="LED01">FALSE</field>
+            <field name="LED11">TRUE</field>
+            <field name="LED21">TRUE</field>
+            <field name="LED31">TRUE</field>
+            <field name="LED41">FALSE</field>
+            <field name="LED02">FALSE</field>
+            <field name="LED12">FALSE</field>
+            <field name="LED22">TRUE</field>
+            <field name="LED32">FALSE</field>
+            <field name="LED42">FALSE</field>
+            <field name="LED03">FALSE</field>
+            <field name="LED13">TRUE</field>
+            <field name="LED23">TRUE</field>
+            <field name="LED33">TRUE</field>
+            <field name="LED43">FALSE</field>
+            <field name="LED04">TRUE</field>
+            <field name="LED14">FALSE</field>
+            <field name="LED24">FALSE</field>
+            <field name="LED34">FALSE</field>
+            <field name="LED44">TRUE</field>
+          </block>
+        </value>
+        <value name="offset">
+          <shadow type="math_number" id="#j!~mAYr{.!H%9k^2I9$">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="device_pause" id="c|nd)#^v+2$uYXHZ@(WJ">
+            <value name="pause">
+              <shadow type="math_number" id="|Xf(TH|sm{RBpr_o1+=z">
+                <field name="NUM">1000</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="basic_show_icon" id="h4ZPYyT7AB~G7u)+1Egp">
+                <field name="i">IconNames.Sad</field>
+                <next>
+                  <block type="device_pause" id="[NNNTVx3)D/)Br5[nu(:">
+                    <value name="pause">
+                      <shadow type="math_number" id="4c0uPp0qj0llxiIxRSGR">
+                        <field name="NUM">1000</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="device_clear_display" id="8%BO332L!8W9]a[p=48v">
+                        <next>
+                          <block type="device_pause" id="CZuDLNaA:4o9=ul`v44q">
+                            <value name="pause">
+                              <shadow type="math_number" id="=@9$.U3Z:.s7;-]+#bOU">
+                                <field name="NUM">1000</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="device_print_message" id="M4GLz.w3G0s6m.w?w4dL">
+                                <value name="text">
+                                  <shadow type="text" id="-6VM+Ah((L;oOSxBPs:b">
+                                    <field name="TEXT">bye.</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="device_pause" id="+V|*+`-Pu)U1uY5Zo~*U">
+                                    <value name="pause">
+                                      <shadow type="math_number" id="DGy4G$bzt2N,xeD6H+n.">
+                                        <field name="NUM">1000</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="device_clear_display" id="/:_2nl*h|HOM.J^;)RUB"></block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="device_gesture_event" id="~+:|Sdyez{h26B]!QKiD" x="306" y="423">
+    <field name="NAME">Gesture.Shake</field>
+    <statement name="HANDLER">
+      <block type="device_while" id="y.+l~!kXk~*?sxtAH.f#">
+        <value name="COND">
+          <shadow type="logic_boolean">
+            <field name="BOOL">TRUE</field>
+          </shadow>
+          <block type="logic_compare" id="|P$+q/l%}5Q,:}EjtxWQ">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <shadow type="math_number">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="variables_get" id="[`@#ePb!?r_8)C[3IZN/">
+                <field name="VAR">last</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="variables_get" id="ftx4;ct[p/#)e1V}|;l)">
+                <field name="VAR">random</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="variables_set" id="99B-i8cK8iW)d^?8$S5)">
+            <field name="VAR">random</field>
+            <value name="VALUE">
+              <shadow type="math_number">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="device_random" id="^6=TRDw!E,NTk}htatZ~">
+                <value name="limit">
+                  <shadow type="math_number" id="YgQr@`FNVw9*%,l1p`86">
+                    <field name="NUM">8</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="variables_set" id="d3ngcW[_XmY*=YP0^A!d">
+            <field name="VAR">last</field>
+            <value name="VALUE">
+              <shadow type="math_number">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="variables_get" id="!]mjt[`wd(ne8KNTc/r%">
+                <field name="VAR">random</field>
+              </block>
+            </value>
+            <next>
+              <block type="device_show_number" id="?YOD9#vX8!qc$cFx3E{1">
+                <value name="number">
+                  <block type="variables_get" id="7#F%A!rbqynLgVpsB1p$">
+                    <field name="VAR">random</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="device_button_event" id="b)a=41yt69C5!UbfAK[k" x="133" y="776">
+    <field name="NAME">Button.AB</field>
+    <statement name="HANDLER">
+      <block type="controls_repeat_ext" id="c8%Yz(d1j.3=aD8JqXGN">
+        <value name="TIMES">
+          <shadow type="math_number" id="oGoLw|@3?pe)_%o7{s:=">
+            <field name="NUM">2</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="device_print_message" id="|x{?YKY^_Hf.j)OI)A@R">
+            <value name="text">
+              <shadow type="text" id="G7P3#jYy#RXRVkMp+`Tl">
+                <field name="TEXT">Hello!</field>
+              </shadow>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="device_clear_display" id="v`Y._J*=Qwrl:R`V!mve"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="device_button_event" id="YSFpFSppt}=u(:pt0efI" x="176" y="1051">
+    <field name="NAME">Button.B</field>
+    <statement name="HANDLER">
+      <block type="device_show_leds" id="H34D2cp_u??SpBw+HHp|">
+        <field name="LED00">TRUE</field>
+        <field name="LED10">FALSE</field>
+        <field name="LED20">TRUE</field>
+        <field name="LED30">FALSE</field>
+        <field name="LED40">TRUE</field>
+        <field name="LED01">FALSE</field>
+        <field name="LED11">TRUE</field>
+        <field name="LED21">FALSE</field>
+        <field name="LED31">TRUE</field>
+        <field name="LED41">FALSE</field>
+        <field name="LED02">TRUE</field>
+        <field name="LED12">FALSE</field>
+        <field name="LED22">TRUE</field>
+        <field name="LED32">FALSE</field>
+        <field name="LED42">TRUE</field>
+        <field name="LED03">FALSE</field>
+        <field name="LED13">TRUE</field>
+        <field name="LED23">FALSE</field>
+        <field name="LED33">TRUE</field>
+        <field name="LED43">FALSE</field>
+        <field name="LED04">TRUE</field>
+        <field name="LED14">FALSE</field>
+        <field name="LED24">TRUE</field>
+        <field name="LED34">FALSE</field>
+        <field name="LED44">TRUE</field>
+        <next>
+          <block type="device_pause" id="+3NTLs]D7)H@x|h@`.v*">
+            <value name="pause">
+              <shadow type="math_number" id="R!f#1*lcS1Dv$SJ%Flxk">
+                <field name="NUM">1000</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="basic_show_icon" id="*~pmw.cJ1Y8QK?^~-3ll">
+                <field name="i">IconNames.Happy</field>
+                <next>
+                  <block type="device_pause" id="J@UALaa[k,03LUeuGIa(">
+                    <value name="pause">
+                      <shadow type="math_number" id="#NZ(FF|w;dOf/#*0^K4C">
+                        <field name="NUM">1000</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="device_print_message" id="|@2eg}0|-h9:*2TF83wC">
+                        <value name="text">
+                          <shadow type="text" id="Rn1s)g%{dl#TI[2YfwY`">
+                            <field name="TEXT">bye.</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="device_clear_display" id="{,,$=;(Ef`s(7y]9*p$|"></block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
