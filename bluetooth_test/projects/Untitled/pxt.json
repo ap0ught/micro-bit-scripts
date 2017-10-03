@@ -1,0 +1,13 @@
+{
+    "name": "bluetooth_",
+    "dependencies": {
+        "core": "*",
+        "bluetooth": "*"
+    },
+    "description": "",
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ]
+}

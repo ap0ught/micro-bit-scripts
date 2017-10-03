@@ -1,0 +1,27 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="pxt-on-start" id="6r1Euncj8i;sweAdXRM:" x="20" y="20"></block>
+  <block type="device_forever" id="_Zg,$LD:YmLc-}?qs9[F" x="126" y="20">
+    <statement name="HANDLER">
+      <block type="eddystone_advertise_url" id="DBQFD9CMF2=NZ0PG53qI">
+        <value name="url">
+          <shadow type="text" id="YdW|N$T_9-0s6/)[gPZ%">
+            <field name="TEXT">https://pxt.makecode.com</field>
+          </shadow>
+        </value>
+        <value name="power">
+          <shadow type="math_number" id="o#`NGqh:q1TITHNtYtJs">
+            <field name="NUM">7</field>
+          </shadow>
+        </value>
+        <value name="connectable">
+          <shadow type="logic_boolean" id="4xFRNAl%-1-AKiPc~J0X">
+            <field name="BOOL">TRUE</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="bluetooth_start_temperature_service" id="zkXJhKT]/{.gEyPr:[wt"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

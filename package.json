@@ -1,0 +1,24 @@
+{
+  "name": "micro-bit-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "pxt-microbit": "^0.12.53",
+    "release-it": "^3.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ap0ught/micro-bit-scripts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ap0ught/micro-bit-scripts/issues"
+  },
+  "homepage": "https://github.com/ap0ught/micro-bit-scripts#readme"
+}
