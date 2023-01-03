@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "pxt-microbit": "^0.12.64",
+    "pxt-microbit": "^4.0.24",
     "release-it": "^15.6.0"
   },
   "devDependencies": {},
