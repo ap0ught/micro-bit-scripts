@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "pxt-microbit": "^4.1.54",
-    "release-it": "^15.6.0"
+    "release-it": "^19.2.4"
   },
   "devDependencies": {},
   "scripts": {
